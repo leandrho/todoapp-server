@@ -17,7 +17,6 @@ export class PgUserDatasource implements UserDatasource{
             return user;
             
         } catch (error) {
-            console.log(error + 'PGUSERDATASOURCE ---- CREATE')
             return null;
         }
     }
