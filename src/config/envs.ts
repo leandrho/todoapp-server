@@ -8,4 +8,6 @@ export const envs = {
     PG_DB_PORT: get('PG_DB_PORT').required().asPortNumber(),
     PG_DB_USER: get('PG_DB_USER').required().asString(),
     PG_DB_PASS: get('PG_DB_PASS').required().asString(),
+    PORT: get('PORT').required().asPortNumber(),
+    
 }

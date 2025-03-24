@@ -1,7 +1,7 @@
 import app from "./app";
-
+import { envs } from "../../config/envs";
 export const startServer = ()=>{
-    app.listen(3000,()=>{
-        console.log('Server running on http://localhost:3000')
+    app.listen(envs.PORT,()=>{
+        console.log(`Server running on http://localhost:${envs.PORT}`)
     });
 }
